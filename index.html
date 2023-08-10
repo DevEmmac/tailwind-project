@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind/output.css">
+</head>
+<body class="text-blue-700 font-serif">
+   
+    <div class="grid md:grid-cols-3"> <!--wrapper content-->
+        <div class="md:col-span-1 md:flex md:justify-end">
+          <nav class="text-right">
+
+            <div class="flex justify-between items-center">
+              <div>
+                  <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                      <a href="#" class="text-green-500 sm:text-red-500 hover:text-gray-700">Food Card</a>
+                  </h1>
+              </div>
+                <div class="px-4 cursor-pointer md:hidden" id="burg">
+                  <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </div>
+
+            </div>
+
+               <ul class="text-sm mt-6 hidden md:block" id="menu">
+
+                  <li class="text-gray-700 font-bold py-1">
+                      <a href="#" class="px-4 flex justify-end border-r-4 border-red-300"> 
+                        <span>Home</span>
+                        <svg class="w-5 inline-block ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                      </a>
+                  </li>
+  
+                  <li class="py-1">
+                      <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>About</span>
+                        <svg class="w-5 inline-block ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                        </svg>
+                        
+                      </a>
+                  </li>
+  
+                 <li class="py-1">
+                      <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>contact</span>
+                          <svg class="w-5 inline-block ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                        </svg>
+                        
+                      </a>
+                  </li>
+               </ul>
+          </nav>
+        </div> <!-- end of nav   -->
+        
+         <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+           <div class="flex justify-center md:justify-end">
+              <a href="#" class="btn text-red-400 border-red-200 md:border-2 hover:bg-red-300 hover:text-white transition ease-out duration-500">Log in</a>
+              <a href="#" class="btn text-red-400 ml-2 border-red-200 md:border-2 hover:bg-red-300 hover:text-white transition ease-out duration-500">Sign up</a>
+           </div>
+
+           <header>
+             <div>
+                <h2 class="text-gray-700 text-6xl font-semibold">Cake Bakery</h2>
+                <h3 class="text-2xl font-semibold">M And F cakes</h3>
+             </div>
+           </header>
+  
+            <div>
+              <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipe</h4>
+  
+             <div class="mt-8 grid lg:grid-cols-4 gap-5">
+                 <!-- cards go here -->
+                 <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
+                   <img src="tailwind/images/pemphigus-gc8e77efd9_1920.jpg" alt="pic" class="w-full h-32 sm:h-48 object-cover">
+                      <div class="m-4">
+                        <span class="font-bold">5 chili Bean stew</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Emmanuel</span>
+                      </div>
+
+                        <div class="bg-red-200 text-gray-400 text-xs uppercase rounded-full font-bold p-2 absolute top-0 ml-2 mt-2">
+                          <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>25 mins</span>
+                        </div>
+                 </div>
+
+                 <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
+                  <img src="tailwind/images/laptop-2434393_1920 (another copy).jpg" alt="pic" class="w-full h-32 sm:h-48 object-cover">
+                     <div class="m-4">
+                       <span class="font-bold">More Laptop</span>
+                       <span class="block text-gray-500 text-sm">Recipe by Emmanuel</span>
+                     </div>
+
+                       <div class="bg-red-200 text-gray-400 text-xs uppercase rounded-full font-bold p-2 absolute top-0 ml-2 mt-2">
+                         <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                         <span>25 mins</span>
+                       </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
+                  <img src="tailwind/images/home-office-569153_1920.jpg" alt="pic" class="w-full h-32 sm:h-48 object-cover">
+                     <div class="m-4">
+                       <span class="font-bold">Home utencil</span>
+                       <span class="block text-gray-500 text-sm">Recipe by Emmanuel</span>
+                       </div>
+
+                       <div class="bg-red-200 text-gray-400 text-xs uppercase rounded-full font-bold p-2 absolute top-0 ml-2 mt-2">
+                         <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                         </svg>
+                         <span>25 mins</span>
+                        </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
+                  <img src="tailwind/images/laptop-1205256_1920.jpg" alt="pic" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                       <span class="font-bold">Mac laptop</span>
+                       <span class="block text-gray-500 text-sm">Recipe by Emmanuel</span>
+                      </div>
+                       <div class="bg-red-200 text-gray-400 text-xs uppercase rounded-full font-bold p-2 absolute top-0 ml-2 mt-2">
+                         <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                         </svg>
+                         <span>25 mins</span>
+                       </div>
+                     </div>
+                </div>
+  
+              <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+  
+              <div class="mt-8">
+               <!-- cards go here -->
+              </div>
+  
+              <div class="flex justify-center">
+                <div class="btn bg-gray-300 text-red-500 tansition ease-out duration-300 hover:scale-125 hover:bg-opacity-50 hover:shadow-inner transform">Load more</div>
+              </div>
+            </div>  
+            
+         </main>
+      </div>
+  <script src="./tailwind/index.js"></script>
+</body>
+</html>
